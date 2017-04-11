@@ -22,3 +22,52 @@ select,
 textarea {
     max-width: 280px;
 }
+
+h1.contact {
+    text-align: center;
+    color: #a8a8a8;
+    text-shadow: 1px 1px 0 white;
+}
+
+#input-name, #input-email, #input-subject, #input-message, #input-submit {
+    border: 0;
+    outline: 0;
+    padding: 1em;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    resize: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#input-name:focus, #input-email:focus, #input-subject:focus, #input-message:focus, #input-submit:focus {
+        -moz-box-shadow: 0 0px 2px #e74c3c !important;
+        -webkit-box-shadow: 0 0px 2px #e74c3c !important;
+        box-shadow: 0 0px 2px #e74c3c !important;
+    }
+
+form #input-submit {
+    color: white;
+    background: #e74c3c;
+    cursor: pointer;
+}
+
+form #input-submit:hover {
+        -moz-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+        -webkit-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+        box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+    }
+
+#input-message {
+    height: 126px;
+}
+
+@media (max-width: 100%) {
+}
