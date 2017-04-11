@@ -7,9 +7,11 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using DogBirthday.Models;
+using Microsoft.AspNet.Identity;
 
 namespace DogBirthday.Controllers
 {
+    [Authorize]
     public class DogsController : Controller
     {
         private DogBirthdayContext db = new DogBirthdayContext();
@@ -17,7 +19,8 @@ namespace DogBirthday.Controllers
         // GET: Dogs
         public ActionResult Index()
         {
-            var dogs = db.Dogs.Include(d => d.DogBreed);
+            string userId = User.Identity.GetUserId();
+            var dogs = db.Dogs.Where(dog => dog.CreatedBy == userId).Include(d => d.DogBreed);
             return View(dogs.ToList());
         }
 
@@ -29,7 +32,7 @@ namespace DogBirthday.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             Dog dog = db.Dogs.Find(id);
-            if (dog == null)
+            if (dog == null || dog.CreatedBy != User.Identity.GetUserId())
             {
                 return HttpNotFound();
             }
@@ -52,10 +55,11 @@ namespace DogBirthday.Controllers
         {
             if (ModelState.IsValid)
             {
+                dog.CreatedBy = User.Identity.GetUserId();
                 db.Dogs.Add(dog);
                 db.SaveChanges();
                 return RedirectToAction("Index");
-            }
+            } 
 
             ViewBag.BreedID = new SelectList(db.Breeds, "BreedID", "Description", dog.BreedID);
             return View(dog);
@@ -69,7 +73,7 @@ namespace DogBirthday.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             Dog dog = db.Dogs.Find(id);
-            if (dog == null)
+            if (dog == null || dog.CreatedBy != User.Identity.GetUserId())
             {
                 return HttpNotFound();
             }
@@ -84,9 +88,15 @@ namespace DogBirthday.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "DogID,Name,DogGender,Birthday,BreedID,Owner")] Dog dog)
         {
+            Dog originalDog = db.Dogs.Find(dog.DogID);
+            if (dog == null || originalDog.CreatedBy != User.Identity.GetUserId())
+            {
+                return HttpNotFound();
+            }
             if (ModelState.IsValid)
             {
-                db.Entry(dog).State = EntityState.Modified;
+                dog.CreatedBy = originalDog.CreatedBy;
+                db.Entry(originalDog).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -102,7 +112,7 @@ namespace DogBirthday.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             Dog dog = db.Dogs.Find(id);
-            if (dog == null)
+            if (dog == null || dog.CreatedBy != User.Identity.GetUserId())
             {
                 return HttpNotFound();
             }

@@ -10,15 +10,20 @@ namespace DogBirthday.Models
     {
         public int DogID { get; set; }
         public string Name { get; set; }
-        [Display(Name = "Gender")]
-        public virtual Gender DogGender { get; set; }
-        public DateTime Birthday { get; set; }
 
-        [Display(Name = "Breed")]
+        [Display(Name="Breed")]
         public int BreedID { get; set; }
         public virtual Breed DogBreed { get; set; }
 
+        [Display(Name = "Gender")]
+        public virtual Gender DogGender { get; set; }
+        [DisplayFormat(DataFormatString = "{0: MM/dd/yyyy}")]
+        public DateTime Birthday { get; set; }
+
         public string Owner { get; set; }
+
+        [MaxLength(50)]
+        public string CreatedBy { get; set; }
 
     }
 }

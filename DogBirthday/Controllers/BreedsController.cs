@@ -10,6 +10,7 @@ using DogBirthday.Models;
 
 namespace DogBirthday.Controllers
 {
+    [Authorize]
     public class BreedsController : Controller
     {
         private DogBirthdayContext db = new DogBirthdayContext();
