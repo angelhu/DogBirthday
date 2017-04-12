@@ -22,6 +22,7 @@
                
             </div>
             <div class="navbar-collapse collapse">
+                    @Html.ActionLink("WoofDays", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
@@ -30,9 +31,7 @@
                     <li>@Html.ActionLink("Breed", "Index", "Breeds")</li>
                     }
                 </ul>
-                <span id="app-name">
-                    @Html.ActionLink("WoofDays", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-                </span>
+                
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
