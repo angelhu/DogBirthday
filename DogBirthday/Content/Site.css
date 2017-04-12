@@ -76,8 +76,8 @@ form #input-submit:hover {
 
 /*navbar change*/
 .navbar-brand {
-    font-family: 'Lobster', cursive;
-    font-size: 32px;
+    font-family: 'Bungee Inline', cursive;
+    font-size: 36px;
 }
 
 .navbar-inverse {
@@ -96,4 +96,8 @@ form #input-submit:hover {
 .index-background img
 {
     width: 100%; 
+}
+
+h1.contact {
+    margin-top: 50px;
 }
