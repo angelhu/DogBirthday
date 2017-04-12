@@ -75,9 +75,17 @@ form #input-submit:hover {
 }
 
 /*navbar change*/
+.navbar {
+    position: relative;
+}
+
 .navbar-brand {
     font-family: 'Bungee Inline', cursive;
     font-size: 36px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 
 .navbar-inverse {
@@ -100,4 +108,8 @@ form #input-submit:hover {
 
 h1.contact {
     margin-top: 50px;
+}
+
+#app-name{
+    text-align: center;
 }
