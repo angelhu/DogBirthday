@@ -1,6 +1,8 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -47,15 +49,15 @@ h1.contact {
     margin-right: auto;
 }
 
-#input-name:focus, #input-email:focus, #input-subject:focus, #input-message:focus, #input-submit:focus {
-        -moz-box-shadow: 0 0px 2px #e74c3c !important;
-        -webkit-box-shadow: 0 0px 2px #e74c3c !important;
-        box-shadow: 0 0px 2px #e74c3c !important;
+    #input-name:focus, #input-email:focus, #input-subject:focus, #input-message:focus, #input-submit:focus {
+        -moz-box-shadow: 0 0px 2px #735FC5 !important;
+        -webkit-box-shadow: 0 0px 2px #735FC5 !important;
+        box-shadow: 0 0px 2px #735FC5 !important;
     }
 
 form #input-submit {
     color: white;
-    background: #e74c3c;
+    background: #673E78;
     cursor: pointer;
 }
 
@@ -70,4 +72,28 @@ form #input-submit:hover {
 }
 
 @media (max-width: 100%) {
+}
+
+/*navbar change*/
+.navbar-brand {
+    font-family: 'Lobster', cursive;
+    font-size: 32px;
+}
+
+.navbar-inverse {
+    background-color: #673E78;
+}
+
+.navbar-inverse .navbar-brand 
+{
+    color: #FBFAF8;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #FBFAF8;
+}
+
+.index-background img
+{
+    width: 100%; 
 }
