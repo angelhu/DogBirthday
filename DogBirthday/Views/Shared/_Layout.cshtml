@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Lobster|Poiret+One|Bungee+Inline" rel="stylesheet">
-    <title>@ViewBag.Title - Dog Birthdays</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Poiret+One|Bungee+Inline|Fredericka+the+Great|Boogaloo|Poppins|Palanquin+Dark" rel="stylesheet">
+    <title>@ViewBag.Title | WoofDays</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -41,12 +41,26 @@
         @RenderSection("BackgroundImage", required: false)
     </div>
 
+    <div class="index-image-two">
+        @RenderSection("IndexImageTwo", required: false)
+    </div>
+
+    <div class="happy-pup-block">
+        @RenderSection("PupCutOut", required: false)
+    </div>
+
+    <div class="birthday-pup-examples">
+        @RenderSection("HappyBirthdayPup", required: false)
+    </div>
+
     <div class="container body-content">
         @RenderBody()
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year WoofDays. All Rights Reserved.</p>
         </footer>
     </div>
+
+    
 
         @Scripts.Render("~/bundles/jquery")
         @Scripts.Render("~/bundles/bootstrap")

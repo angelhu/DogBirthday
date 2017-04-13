@@ -219,7 +219,15 @@
     <Content Include="Content\bootstrap-paper.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Pictures\birthday-pup-1.jpg" />
+    <Content Include="Content\Pictures\birthday-pup-2.jpg" />
+    <Content Include="Content\Pictures\birthday-pup-3.jpg" />
+    <Content Include="Content\Pictures\birthday-pup-4.jpg" />
+    <Content Include="Content\Pictures\birthday-pup-5.jpg" />
+    <Content Include="Content\Pictures\birthday-pup-6.jpg" />
     <Content Include="Content\Pictures\dog-eat-cake.jpg" />
+    <Content Include="Content\Pictures\happy-pup-cutout.png" />
+    <Content Include="Content\Pictures\pug-birthday-bokeh.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
