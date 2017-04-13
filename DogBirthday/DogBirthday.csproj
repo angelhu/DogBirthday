@@ -228,6 +228,7 @@
     <Content Include="Content\Pictures\dog-eat-cake.jpg" />
     <Content Include="Content\Pictures\happy-pup-cutout.png" />
     <Content Include="Content\Pictures\pug-birthday-bokeh.jpg" />
+    <Content Include="Content\Pictures\pug-questions.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

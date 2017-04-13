@@ -18,14 +18,18 @@
     }
 
 @section PupCutOut {
-<div class="happy-pup-block">
-    <div class="purple-background">
-    <img id="pup-cutout" src="~/Content/Pictures/happy-pup-cutout.png" alt="Happy Pup Cutout" />
-    <section id="happy-pup-cutout-paragraph">
-        <h4 id="happy-pup-cutout-help">How we can help</h4>
-        <p id="happy-pup-paragraph">We help you store all the birthdays<br /> of every pup you know at one place,<br /> easy to access, so you won't forget <br />about them even in your busy life.</p>
-        <button id="join-us-two">Join us now</button>
-    </section>
+<div class="purple-background">
+    <div class="centering-container">
+        <div id="pup-cutout">
+            <img src="~/Content/Pictures/happy-pup-cutout.png" alt="Happy Pup Cutout" />
+        </div>
+
+        <div id="happy-pup-cutout-paragraph">
+            <h4 id="happy-pup-cutout-help">How we can help</h4>
+            <p id="happy-pup-paragraph">We help you store all the birthdays<br /> of every pup you know at one place,<br /> easy to access, so you won't forget <br />about them even in your busy life.</p>
+            @Html.ActionLink("Join us now", "Register", "Account", new { }, new { @id = "join-us-two" })
+        </div>
+
     </div>
 </div>
     }
