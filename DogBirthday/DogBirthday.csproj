@@ -204,6 +204,10 @@
     <Compile Include="Migrations\201704112052168_Added_CreatedBy_To_Dog_Model.Designer.cs">
       <DependentUpon>201704112052168_Added_CreatedBy_To_Dog_Model.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201704141510217_add-button-for-breed.cs" />
+    <Compile Include="Migrations\201704141510217_add-button-for-breed.Designer.cs">
+      <DependentUpon>201704141510217_add-button-for-breed.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Breed.cs" />
@@ -232,6 +236,7 @@
     <Content Include="Content\Pictures\pug-exit.png" />
     <Content Include="Content\Pictures\pug-placeholder.jpg" />
     <Content Include="Content\Pictures\pug-questions.png" />
+    <Content Include="Content\Pictures\woofdays-logo.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -323,6 +328,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201704112052168_Added_CreatedBy_To_Dog_Model.resx">
       <DependentUpon>201704112052168_Added_CreatedBy_To_Dog_Model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704141510217_add-button-for-breed.resx">
+      <DependentUpon>201704141510217_add-button-for-breed.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

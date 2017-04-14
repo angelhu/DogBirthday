@@ -45,10 +45,12 @@ h1.contact {
     -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    resize: none;
     margin-left: auto;
     margin-right: auto;
+    resize: none;
 }
+
+
 
     #input-name:focus, #input-email:focus, #input-subject:focus, #input-message:focus, #input-submit:focus {
         -moz-box-shadow: 0 0px 2px #735FC5 !important;
@@ -277,7 +279,7 @@ div .background-paragraph {
 #pug-helper {
     width: 6%;
     position: fixed;
-    right: -6.8px;
+    right: -6.9px;
     margin-top: 60px;
     cursor: pointer;
     z-index: 1;
@@ -352,6 +354,9 @@ div .background-paragraph {
     box-shadow: 0 0px 2px #735FC5 !important;
 }
 
+#breed-add-button {
+    background-color: red;
+}
 
 footer {
     font-size: 16px;

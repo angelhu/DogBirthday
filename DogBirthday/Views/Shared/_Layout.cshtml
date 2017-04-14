@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="~/Content/Pictures/woofdays-logo.png">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lobster|Poiret+One|Bungee+Inline|Fredericka+the+Great|Boogaloo|Poppins|Palanquin+Dark" rel="stylesheet">
     <title>@ViewBag.Title | WoofDays</title>
@@ -22,11 +23,11 @@
             $('#pug-helper-disappear').fadeIn(100);
             document.getElementById("pug-helper-disappear").style.visibility = "visible";
         }
-            function hidePug() {
-                document.getElementById("pug-helper").style.visibility = "hidden";
-                document.getElementById("pug-helper-disappear").style.visibility = "hidden";
-    }
-    
+        function hidePug() {
+            document.getElementById("pug-helper").style.visibility = "hidden";
+            document.getElementById("pug-helper-disappear").style.visibility = "hidden";
+        }
+
     </script>
 
 
@@ -48,9 +49,10 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    @if (Request.IsAuthenticated) { 
-                    <li>@Html.ActionLink("Dog", "Index", "Dogs")</li>
+                    @if (Request.IsAuthenticated)
+                    {
                     <li>@Html.ActionLink("Breed", "Index", "Breeds")</li>
+                    <li>@Html.ActionLink("Dog", "Index", "Dogs")</li>
                     }
                 </ul>
                 
@@ -101,5 +103,7 @@
         @Scripts.Render("~/bundles/jquery")
         @Scripts.Render("~/bundles/bootstrap")
         @RenderSection("scripts", required: false)
+
+    
 </body>
 </html>
