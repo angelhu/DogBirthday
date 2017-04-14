@@ -10,7 +10,8 @@ namespace DogBirthday.Models
     {
         public int DogID { get; set; }
         [Required]
-        public string Name { get; set; }
+        [Display(Name = "Dog Name")]
+        public string DogName { get; set; }
 
         [Display(Name="Breed")]
         public int BreedID { get; set; }

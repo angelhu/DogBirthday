@@ -208,6 +208,22 @@
     <Compile Include="Migrations\201704141510217_add-button-for-breed.Designer.cs">
       <DependentUpon>201704141510217_add-button-for-breed.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201704141645051_added-username.cs" />
+    <Compile Include="Migrations\201704141645051_added-username.Designer.cs">
+      <DependentUpon>201704141645051_added-username.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704141847321_changed-dogname.cs" />
+    <Compile Include="Migrations\201704141847321_changed-dogname.Designer.cs">
+      <DependentUpon>201704141847321_changed-dogname.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704141854110_update-stuff.cs" />
+    <Compile Include="Migrations\201704141854110_update-stuff.Designer.cs">
+      <DependentUpon>201704141854110_update-stuff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704141926257_delete-database.cs" />
+    <Compile Include="Migrations\201704141926257_delete-database.Designer.cs">
+      <DependentUpon>201704141926257_delete-database.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Breed.cs" />
@@ -331,6 +347,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201704141510217_add-button-for-breed.resx">
       <DependentUpon>201704141510217_add-button-for-breed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704141645051_added-username.resx">
+      <DependentUpon>201704141645051_added-username.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704141847321_changed-dogname.resx">
+      <DependentUpon>201704141847321_changed-dogname.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704141854110_update-stuff.resx">
+      <DependentUpon>201704141854110_update-stuff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704141926257_delete-database.resx">
+      <DependentUpon>201704141926257_delete-database.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

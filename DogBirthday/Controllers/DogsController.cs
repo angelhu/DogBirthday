@@ -51,7 +51,7 @@ namespace DogBirthday.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "DogID,Name,DogGender,Birthday,BreedID,Owner")] Dog dog)
+        public ActionResult Create([Bind(Include = "DogID,DogName,DogGender,Birthday,BreedID,Owner")] Dog dog)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace DogBirthday.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "DogID,Name,DogGender,Birthday,BreedID,Owner")] Dog dog)
+        public ActionResult Edit([Bind(Include = "DogID,DogName,DogGender,Birthday,BreedID,Owner")] Dog dog)
         {
             Dog originalDog = db.Dogs.Find(dog.DogID);
             if (dog == null || originalDog.CreatedBy != User.Identity.GetUserId())
