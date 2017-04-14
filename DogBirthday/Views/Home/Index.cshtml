@@ -3,9 +3,14 @@
 }
 
 @section BackgroundImage {
-    <div class="index-background">
-        <img src="~/Content/Pictures/dog-eat-cake.jpg" alt="Dog Eating Cake" />
-    </div>
+        <div class="pup-cake-picture">
+            <div class="background-paragraph">
+                <h1>Hi, pup lovers</h1>
+                <h5>WoofDay is a place to keep track<br /> of your pup friends' birthdays.</h5>
+                @Html.ActionLink("Sounds awesome", "Register", "Account", new { }, new { @id = "join-us-two" })
+                @Html.ActionLink("Already a member", "Login", "Account", new { }, new { @id = "join-us-two" })
+            </div>
+        </div>
 }
 
 

@@ -99,11 +99,51 @@ form #input-submit:hover {
     color: #FBFAF8;
 }
 
-.index-background img
-{
-    width: 100%; 
+
+.pup-cake-picture {
+    position: relative;
+    overflow: auto;
+    background-image: url('Pictures/dog-eat-cake.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 800px;
 }
 
+
+div .background-paragraph {
+    float: right;
+    text-align: center; 
+    margin-right: 16%;
+    margin-top: 24%;
+  
+}
+
+.background-paragraph h1 {
+    font-family: 'Boogaloo', cursive;
+    color: black;
+    font-size: 2.6em;
+    text-transform: uppercase;
+}
+
+.background-paragraph h5 {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    line-height: 1.5em;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+@media (max-width: 960px) {
+    .background-paragraph h1 {
+        font-size: 2.2em;
+    }
+
+    .background-paragraph h5 {
+        font-size: 1em;
+        line-height: 1.4em;
+    }
+}
 
 #app-name{
     text-align: center;
@@ -235,13 +275,21 @@ form #input-submit:hover {
 }
 
 #pug-helper {
-    width: 50px;
+    width: 10%;
     position: fixed;
-    right: -5px;
+    right: -6.5px;
     margin-top: 60px;
     cursor: pointer;
     z-index: 1;
 }
+
+.form-control:focus {
+    -moz-box-shadow: 0 0px 2px #735FC5 !important;
+    -webkit-box-shadow: 0 0px 2px #735FC5 !important;
+    box-shadow: 0 0px 2px #735FC5 !important;
+}
+
+
 footer {
     font-size: 16px;
     padding-top: 16px;
