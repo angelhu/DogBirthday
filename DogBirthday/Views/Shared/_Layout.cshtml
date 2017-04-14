@@ -11,12 +11,12 @@
 
     <script type="text/javascript">
         function open_chatbox() {
-            $('#pug-helper').fadeOut(500);
-            $('#chatBox').fadeIn(1000);
+            $('#pug-helper').fadeOut("fast");
+            $('#chatBox').fadeIn("fast");
         }
         function closeChat() {
-            $('#chatBox').fadeOut(500);
-            $('#pug-helper').fadeIn(1000);
+            $('#chatBox').fadeOut("fast");
+            $('#pug-helper').fadeIn("fast");
         }
     </script>
 
@@ -56,7 +56,11 @@
 
     
     <div id="chatBox">
-        <div onclick="closeChat()" id="close"></div> Chat Chat Chat
+        <div id="chat-box-bar">
+            <div id="pug-helper-title"> Pug Helper</div>
+            <div onclick="closeChat()" id="close">X</div>
+        </div> 
+        Chat Chat Chat
     </div>
 
     <div class="index-background">
