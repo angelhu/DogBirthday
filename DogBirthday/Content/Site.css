@@ -283,6 +283,14 @@ div .background-paragraph {
     z-index: 1;
 }
 
+#pug-helper-disappear {
+    position: fixed;
+    right: 67px;
+    margin-top: 61px;
+    z-index: 1;
+    width: 0.9%;
+}
+
 /*chat box*/
 #chatBox {
     display: none;

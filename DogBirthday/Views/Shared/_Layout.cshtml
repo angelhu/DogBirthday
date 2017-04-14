@@ -11,13 +11,22 @@
 
     <script type="text/javascript">
         function open_chatbox() {
-            $('#pug-helper').fadeOut("fast");
-            $('#chatBox').fadeIn("fast");
+            $('#pug-helper').fadeOut(100);
+            $('#pug-helper-disappear').fadeOut(100);
+            $('#chatBox').fadeIn(100);
+            document.getElementById("pug-helper-disappear").style.visibility = "hidden";
         }
         function closeChat() {
-            $('#chatBox').fadeOut("fast");
-            $('#pug-helper').fadeIn("fast");
+            $('#chatBox').fadeOut(100);
+            $('#pug-helper').fadeIn(100);
+            $('#pug-helper-disappear').fadeIn(100);
+            document.getElementById("pug-helper-disappear").style.visibility = "visible";
         }
+            function hidePug() {
+                document.getElementById("pug-helper").style.visibility = "hidden";
+                document.getElementById("pug-helper-disappear").style.visibility = "hidden";
+    }
+    
     </script>
 
 
@@ -50,8 +59,9 @@
         </div>
     </div>
     
-    <div id="qustions" onClick="open_chatbox()">
-        <img id="pug-helper" src="~/Content/Pictures/pug-chat.png" alt="Questions" />
+    <div id="qustions">
+        <img id="pug-helper" onClick="open_chatbox()" src="~/Content/Pictures/pug-chat.png" alt="Questions" />
+        <img id="pug-helper-disappear" onclick="hidePug()" src="~/Content/Pictures/pug-exit.png" />
     </div>
 
     
