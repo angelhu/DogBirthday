@@ -3,10 +3,23 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lobster|Poiret+One|Bungee+Inline|Fredericka+the+Great|Boogaloo|Poppins|Palanquin+Dark" rel="stylesheet">
     <title>@ViewBag.Title | WoofDays</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+
+    <script type="text/javascript">
+        function open_chatbox() {
+            $('#pug-helper').fadeOut(500);
+            $('#chatBox').fadeIn(1000);
+        }
+        function closeChat() {
+            $('#chatBox').fadeOut(500);
+            $('#pug-helper').fadeIn(1000);
+        }
+    </script>
+
 
 </head>
 
@@ -37,8 +50,13 @@
         </div>
     </div>
     
-    <div id="qustions">
-        <a href="/Home/Contact" /><img id="pug-helper" src="~/Content/Pictures/pug-chat.png" alt="Questions" /></a>
+    <div id="qustions" onClick="open_chatbox()">
+        <img id="pug-helper" src="~/Content/Pictures/pug-chat.png" alt="Questions" />
+    </div>
+
+    
+    <div id="chatBox">
+        <div onclick="closeChat()" id="close"></div> Chat Chat Chat
     </div>
 
     <div class="index-background">

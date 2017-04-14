@@ -283,6 +283,36 @@ div .background-paragraph {
     z-index: 1;
 }
 
+/*chat box*/
+#chatBox {
+    display: none;
+    position: fixed;
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+    background: #EDEDED;
+    color: purple;
+    text-align: center;
+    font-family: Cambria;
+    font-size: 20px;
+    bottom: 0px;
+    right: 15px;
+    cursor: pointer;
+    border-color: #DDD;
+    z-index: 1;
+}
+
+#close {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    padding: 6px 5px 10px 5px;
+    text-align: center;
+    background: rgba(0,0,0,0.8);
+    color: purple;
+    right: 0px;
+    top: 0px;
+}
 .form-control:focus {
     -moz-box-shadow: 0 0px 2px #735FC5 !important;
     -webkit-box-shadow: 0 0px 2px #735FC5 !important;
