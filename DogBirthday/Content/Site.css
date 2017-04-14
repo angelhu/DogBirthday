@@ -311,6 +311,11 @@ div .background-paragraph {
     border-radius: 0 0 5px 5px;
 }
 
+#placeholder {
+    width: 95%;
+    margin-top: 30px;
+}
+
 #chat-box-bar {
     border-radius: 5px 5px 0 0;
     height: 24px;
@@ -335,6 +340,11 @@ div .background-paragraph {
     right: 4px;
     top: 0px;
     margin-top: -10px;
+}
+
+#close:hover {
+    color: #e6d7ff;
+
 }
 .form-control:focus {
     -moz-box-shadow: 0 0px 2px #735FC5 !important;

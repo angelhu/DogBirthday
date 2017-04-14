@@ -230,6 +230,7 @@
     <Content Include="Content\Pictures\pug-birthday-bokeh.jpg" />
     <Content Include="Content\Pictures\pug-chat.png" />
     <Content Include="Content\Pictures\pug-exit.png" />
+    <Content Include="Content\Pictures\pug-placeholder.jpg" />
     <Content Include="Content\Pictures\pug-questions.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
