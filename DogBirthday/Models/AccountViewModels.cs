@@ -64,7 +64,10 @@ namespace DogBirthday.Models
 
     public class RegisterViewModel
     {
-        
+        [Required]
+        [Display(Name = "Name")]
+        public string AccountName { get; set; }
+
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]

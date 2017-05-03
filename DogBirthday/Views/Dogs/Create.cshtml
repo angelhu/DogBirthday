@@ -41,14 +41,25 @@
 
         <div class="form-group">
             @Html.LabelFor(model => model.BreedID, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
+            <div class="col-md-3" id="DogBreedDropdown">		
+            <div class="input-group">
                 @Html.DropDownList("BreedID", null, htmlAttributes: new { @class = "form-control" })
+            <span class="input-group-btn">
+                <button class="btn btn-default" id="ShowNewDescriptionFormButton"><icon class="glyphicon glyphicon-plus"></icon></button>
+            </span>
+            </div>
                 @Html.ValidationMessageFor(model => model.BreedID, "", new { @class = "text-danger" })
             </div>
-            <div class="col-md-offset-2 col-md-10">
-                <a href="/Breeds/Create"><input type="button" value="Add" class="btn btn-default" id="breed-add-button"/></a>
+            <div class="col-md-3" id="NewDogBreedForm">
+            <div class="input-group">
+                <input type="text" id="NewDogBreedDescription" class="form-control" placeholder="New breed..." />
+            <span class="input-group-btn">
+            <button class="btn btn-default" id="NewDogBreedOkButton"><icon class="glyphicon glyphicon-ok"></icon></button>
+            <button class="btn btn-default" id="NewDogBreedCancelButton"><icon class="glyphicon glyphicon-remove"></icon></button>
+             </span>
+             </div>
             </div>
-        </div>
+            </div>
         
         
 
@@ -74,4 +85,5 @@
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
+    <script type="text/javascript" src="~/Scripts/AddNewDogBreeds.js"></script>
 }
